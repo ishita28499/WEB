@@ -1,0 +1,708 @@
+Q. What is bootstrap ? Why to use ? what is advantage ? 
+====
+Ans:1
+
+Bootstrap / Why to use it
+---------
+>>> Bootstrap is a framework of CSS
+>>> Bootstrap is a collection of CSS , Javascript and Jquery
+>>> In bootstrap we get readymade code and we just need to call that CSS class in our component
+>>> Bootstrap is a open source framework and easy to use
+>>> Bootstrap help us to make resposive websites which is user friendly in all types of devices
+>>> Using bootstrap make our work easy and simple
+>>> Bootstrap framwork initially devloped by team of Twitter web developers and after that it was release open source 
+    project on github
+>>> Responsives websties automatically adjust according to device width 
+>>> Till now 3 version of bootstrap are there
+
+How to use bootstrap
+-------------------
+To use bootstrap we have to apply some usefull links in head of the html page
+
+<meta name="viewport" content="width="device-width" initial-scale=1 "/>
+
+width="device-width = this part set page according to screen size
+initial-scale=1 = it set the initial zoom level
+
+after that we have to apply CDN links in the head of the html page
+
+CDN LINK
+---------
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+
+Advantage / Bootstrap features
+---------------------
+1. Resposive
+2. easy to use
+3. portable
+4. enrich in features
+5. Speedy Development
+6. Customizable
+7. Support
+8. Open source
+====
+
+
+Q. What are containers ? Type of containers ?
+====
+Ans:
+Containers:
+-----------
+Containers are basically use for default width and to wrap complete website contents we use Containers
+
+There are basically two types of container
+------------------------------------------
+1. container
+2. container-fluid
+
+container
+---------
+The .container class provides a responsive fixed width container
+
+Example:
+
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+</div> 
+
+container-fluid
+--------------
+The .container-fluid class provides a full width container , which spread all over the web page
+here widhth of the container is always 100%
+
+Example:
+
+<div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+</div>
+====
+
+diagram of container(open link) --> https://www.w3schools.com/bootstrap4/bootstrap_containers.asp
+
+Q. What are bootstrap grids ?
+====
+Ans:
+
+>>> Bootstrap grid system built with flexbox and allows upto 12 columns across the page
+>>> We can also group the colom together to make the wider columns
+
+diagram --> https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
+
+>>> The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.
+
+Bootstrap grid system has five classes
+---------------------------------------
+.col-    => used for extra small devices , where screen width less than 576px
+.col-sm  => use for small devices - screen width equal to or greater than 576px
+.col-md- => use for medium devices - screen width equal to or greater than 768px
+.col-lg- => use for large devices - screen width equal to or greater than 992px
+.col-xl- => use for xlarge devices - screen width equal to or greater than 1200px
+
+sm means small
+md means medium
+lg means large
+xl means xtra large
+
+Basic structure of bootstrap 4 grids
+------------------------------
+Here i make 3 colum of medium size of 4
+
+<div class="container">
+ <div class="row">
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+ </div>
+</div>
+
+Three Equal Columns
+-------------------
+Diagram : https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
+
+<div class="container">
+ <div class="row">
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+ </div>
+</div>
+
+
+Two Unequal Columns
+-------------------
+Diagram : https://www.w3schools.com/bootstrap4/bootstrap_grid_basic.asp
+
+<div class="container">
+ <div class="row">
+   <div class="col-md-4"> 
+     <p>This is bootstrap grids</p>
+   </div>
+   <div class="col-md-8"> 
+     <p>This is bootstrap grids</p>
+   </div>
+ </div>
+</div>
+====
+
+Q. List out some bootstrap text-color and text-formatting classes ?
+====
+Ans:
+
+Text Colors Classes:
+-----------
+.text-muted     -> no color (default) 
+.text-primary   -> Violet color 
+.text-success   -> green color 
+.text-info      -> light blue
+.text-warning   -> yellow color
+.text-danger    -> red color 
+
+Text Formatting Classes:
+-----------------------
+.font-weight-bold    ->  Bold text
+.font-weight-bolder  ->	Bolder text
+.font-italic	     -> Italic text
+.font-weight-light   ->	Light weight text	
+.font-weight-lighter ->	Lighter weight text	
+.font-weight-normal  ->	Normal text
+.text-left	     -> indicates left-aligned text
+.text-center	     -> indicates center-aligned text
+.text-right	     -> indicates right-aligned text
+.text-lowercase	     -> indicates lowercased text	
+.text-uppercase      -> indicates uppercased text	
+.text-capitalize     -> indicates capitalized text
+
+====
+
+
+Q. Bootstrap tables ? How to create ? Types of classes used for bootstrap tables ?
+====
+Ans:
+>>> Bootstrap provide lots of functionality to make tables 
+>>> .table class is there to create bootstrap tables
+
+Basic bootstrap table structure
+-------------------------------
+<div class="container">
+ <table class="table">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <th>Shubham</th>
+    <th>Nigam</th>
+    <th>nigamshubham@gmail.com</th>
+   </tr>
+   <tr>
+    <th>Pranjali</th>
+    <th>Prajwal</th>
+    <th>prajwalpranjali@gmail.com</th>
+   </tr>
+   <tr>
+    <th>Mangla</th>
+    <th>Devi</th>
+    <th>devimangla@gmail.com</th>
+   </tr>
+  </tbody>
+ </table>
+</div>
+
+The .table-hover class adds a hover effect (grey background color) on table rows
+The .table-dark class adds a black background to the table
+.table-striped to create a dark, striped table
+The .table-borderless class removes borders from the table
+
+.table-primary	Blue color background of table
+.table-success	Green color background of table
+.table-danger	Red color background of table
+.table-info	Light blue color background of table
+.table-warning	Yellow color background of table
+
+The .table-sm -> use to create small table
+The .table-md -> use to create medium table
+The .table-lg -> use to create large table
+
+The .table-responsive class use to create responsive table which adds a scrollbar to the bottom of the table
+====
+
+Q. Explain bootstrap button with classes ?
+====
+Ans:
+Bootstrap provide several types of buttons 
+
+.btn-default -> Gives default color of button
+<button type="button" class="btn">Basic</button>
+
+.btn-primary -> Gives blue color of button
+<button type="button" class="btn btn-primary">Primary</button>
+
+.btn-success -> Gives green color of button
+<button type="button" class="btn btn-success">Success</button>
+
+.btn-info    -> Gives light blue color of button
+<button type="button" class="btn btn-info">Info</button>
+
+.btn-warning -> Gives yellow color of button
+<button type="button" class="btn btn-yellow">Warning</button>
+
+.btn-danger  -> Gives red color of button
+<button type="button" class="btn btn-danger">Danger</button>
+
+.btn-link    -> Gives link to button color of button
+<button type="button" class="btn btn-link">Link</button>
+
+The button classes can be used on the following elements:
+1. <a> 
+2. <button>
+3. <input>
+
+
+Button sizes
+------------
+Use the .btn-lg class for large buttons or .btn-sm class for small buttons
+
+<button type="button" class="btn btn-primary btn-lg">Large</button>
+<button type="button" class="btn btn-primary">Default</button>
+<button type="button" class="btn btn-primary btn-sm">Small</button>
+
+Add class .btn-block to create a block level button that spans the entire width of the parent element.
+
+Active/Disabled Buttons
+-----------------------
+A button can be set to an active (appear pressed) or a disabled (unclickable) state
+
+>> The class .active makes a button appear pressed
+>> The class .disabled class to make it visually appear disabled.
+====
+
+
+=======================================================================================================================
+=======================================================================================================================
+						XML STARTED
+=======================================================================================================================
+=======================================================================================================================
+
+
+Q. What is XML ? Usage ? how it is differ from HTML
+====
+Ans:
+
+>>> XML Stands for extensible markup language
+>>> XML is markup language just like HTML 
+>>> XML was designed to store and transport data
+>>> XML was designed to be self-descriptive
+>>> XML is a W3C Recommendation
+
+XML tags identify the data and are used to store and organize the data , where html used to display the data
+
+There are three important characteristics of XML that make it useful in a variety of systems and solutions
+
+1. XML is extensible
+--------------------
+XML allows you to create your own tags , that suits your application
+
+2. XML carries data , does not present present it 
+--------------------------------------------------
+XML allows you to store the data to travel it from one page to another page , and not to display it like html
+
+3. XML is a public standard
+----------------------------
+XML was developed by an organization called W3C (World Wide Consortium) and is available as an open standard 
+
+
+Usage of XML
+------------
+>>> XML can work behind the scene to carry data from one to another page and to display data through html , html plays
+     very important role in large applications
+>>> XML can use to exchange information from one page of application to another page of the application
+>>> XML can store data and according to our need we can use XML data to display it with the help of html
+>>> any type of data XML can able to handle
+
+Difference b/w XML and HTML
+---------------------------
+1. HTML is a hyper text markup language
+   XML is a extensible markup language
+   
+2. HTML is used to display data
+   XML is used to carry data from one page to another page
+  
+3. In HTML we can make user defined tags
+   In XML we can make user defined tags
+
+4. HTML contains all predefined tags only
+   XML doesn't contain any predefined tags 
+   
+
+====
+
+
+Q. Explain structure of XML ? draw basic structure ? explain tree structure ?and draw its diagram ?
+====
+Ans:
+Basic tree like structure
+---------------------------
+<root>
+ <child>
+  <subchild>---</subchild>
+  <subchild>---</subchild>
+  <subchild>---</subchild>
+ </child>
+ <child>
+  <subchild>---</subchild>
+  <subchild>---</subchild>
+  <subchild>---</subchild>
+ </child>
+ <child>
+  <subchild>---</subchild>
+  <subchild>---</subchild>
+  <subchild>---</subchild>
+ </child>
+</root>
+
+
+<college>
+    <name>RVCE</To>
+    <location>Bengaluru</from>
+    <pincode>560059</heading>
+    <nearbuy>Hotel Dreamland</body>
+</note>
+
+====
+
+Q. How to declare XML ? Explain its directory strcuture
+---------------------------------------------------------
+====
+Ans:
+put this link at the head of the page
+
+<?xml version=1.0" encdoing="UTF-8">
+====>
+
+
+Syntax Rules for XML declaration
+------------------------------------
+The XML declaration is case sensitive and must begin with "<?xml>" where "xml" is written in lower-case.
+f document contains XML declaration, then it strictly needs to be the first statement of the XML document.
+
+<?xml version="1.0" encoding="UTf-8"?>
+
+>>> The XML declaration is case sensitive and must begin with "<?xml>" where "xml" is written in lower-case.
+>>> If document contains XML declaration, then it strictly needs to be the first statement of the XML document.
+====
+
+
+
+Q. 5 Explain XML tree strcuture with code  ?
+====
+Ans:
+XML documents form a tree structure that starts at "the root" and branches to "the leaves".
+
+
+Diagram : https://www.w3schools.com/xml/xml_tree.asp
+
+Basic  XML docuemt
+-------------------
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<bookstore>
+	<book category="cooking">
+		<title lang="en">Everyday Italian</title>
+		<author>Giada De Laurentiis</author>
+		<year>2005</year>
+		<price>30.00</price>
+	</book>
+	
+	<book category="children">
+		<title lang="en">Harry Potter</title>
+		<author>J K. Rowling</author>
+		<year>2005</year>		
+		<price>29.99</price>
+	</book>
+
+title is --> elements
+cooking is --> attribute
+
+XML Namespaces
+---------------
+In XML, element names are defined by the developer. This often results in a conflict when trying to mix XML documents from different XML applications.
+
+This XML carries HTML table information:
+
+<table>
+   <tr>
+       <td>Apples</td>
+       <td>Bananas</td>
+   </tr>
+</table>
+
+<table>
+    <name>African Coffee Table</name>
+    <width>80</width>
+    <length>120</length>
+</table>
+
+If these XML fragments were added together, there would be a name conflict. Both contain a <table> element, but the elements have different content and meaning.
+
+
+Solving the Name Conflict Using a Prefix:
+-----------------------------------------
+Name conflicts in XML can easily be avoided using a name prefix.
+
+<h:table>
+   <h:tr>
+       <h:td>Apples</h:td>
+       <h:td>Bananas</h:td>
+   </h:tr>
+</h:table>
+
+<f:table>
+     <f:name>African Coffee Table</f:name>
+     <f:width>80</f:width>
+     <f:length>120</f:length>
+</f:table>
+
+XML Namespaces - The xmlns Attribute
+-----------------------------------
+>>> When using prefixes in XML, a namespace for the prefix must be defined.
+>>> The namespace can be defined by an xmlns attribute in the start tag of an element. 
+>>> The namespace declaration has the following syntax. xmlns:prefix="URI".
+
+
+<?xml version="1.0" encoding = "UTF-8" ?>
+
+<root>
+  <h:table xmlns:h = "http://www.w3.org/html5/">
+     <h:tr>
+       <h:td>Apple</h:td>
+       <h:td>Banana</h:td>
+     </h:tr>
+     <f:tr xmlns:f = "http://www.w3.org/html5/>
+       <f:width>Apple</f:width>
+       <f:length>Banana</f:length>
+     </h:tr>
+  </h:table>
+</root>
+
+xmlns attribute
+XML validator
+</book>	
+====
+
+
+Q. What is DTD ? Types of DTD ? Difference b/w DTD and Schema ?
+====
+Ans:
+>>> XML DTD called as Document Type Definition
+>>> The purpose of a DTD is to define the structure of an XML document. It defines the structure with a list of     
+    legal elements.
+>>> An XML document with correct syntax is called "Well Formed"
+>>> These rules specify a set of elements, along with how and where they can appear in a document
+
+4 keywords in DTD
+-----------------
+1. ELEMENT
+2. ATTLIST
+3. ENTITY
+4. NOTATION
+
+1. ELEMENT
+----------
+<!ELEMENT ele_name(att1,att2,att3,att4)>
+<!ELEMENT book(title,author,price)>
+
+<!DOCTYPE book [
+<!ELEMENT book (title,author,price)> 
+<!ELEMENT title (#PCDATA)> 
+<!ELEMENT author (#PCDATA)> 
+<!ELEMENT price (#PCDATA)> ]>
+
+The DTD above is interpreted like this:
+
+        ◦ !DOCTYPE book defines that the root element of the document is book
+        ◦ !ELEMENT book defines that the book element must contain the elements:
+          "title, author, price”
+        ◦ !ELEMENT title defines the title element to be of type "#PCDATA"
+        ◦ !ELEMENT author defines the author element to be of type "#PCDATA"
+        ◦ !ELEMENT price defines the price element to be of type "#PCDATA"
+
+Note: PCDATA: Parse able Character Data, CDATA: Character Data.
+
+2. ATTLIST
+----------
+<!ATTLIST ele_name,att_name,ele_type, [default] >
+
+
+default values are 
+------------------
+1. #FIXED [every element has this value]
+2. #REQUIRED [every element must needed this value]
+3. #IMPLIED [no default value and need not to specify]
+
+<!ATTLIST car doors CDATA "4">
+<!ATTLIST car enginee CDATA "#REQUIRED">
+<!ATTLIST car price CDATA "#IMPLIED">
+<!ATTLIST car model CDATA "#Ford">
+
+
+
+Two types of DTD's
+------------------
+1) Internal DTD.
+----------------
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Student[
+<!ELEMENT student (id,name,age,addr,email,phn)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT addr (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phn (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>]
+
+<student>
+  <id>101</td>
+  <name>Shubham</name>
+  <age>21</age>
+  <addr>benagluru</addr>
+  <email>nigamshubham@gmail.com</email>
+  <ph>1111111111</ph>
+  <gender>male</gender>
+</student>
+
+2) External DTD.
+---------------
+<!ELEMENT student (id,name,age,addr,email)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT addr (#PCDATA)>
+<!ELEMENT email (#PCDATA)>]
+
+
+save above code as student.dtd
+
+and prepare student.xml
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<student>
+  <id>101</id>
+  <name>Shubham</name>
+  <age>21</age>
+  <addr>benagluru</addr>
+  <email>nigamshubham@gmail.com</email>
+  <ph>1111111111</ph>
+  <gender>male</gender>
+</student>
+
+
+
+XML DTD vs XML Schema
+---------------------
+1. XML DTD is use to verify its own data
+   Schema is use to validate the structure
+   
+2. In XML you can't define type of the element
+   In Schema you can define type of the element also
+    
+
+SCHEMA
+------
+>>> Specify the structure of its instance XML documents
+>>> Specify the data type of every element and attribute of its instance XML documents
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<student>
+  <id>101</id>
+  <name>Shubham</name>
+  <age>21</age>
+  <addr>benagluru</addr>
+  <email>nigamshubham@gmail.com</email>
+  <ph>1111111111</ph>
+  <gender>male</gender>
+</student>
+
+The above schema is interpreted like this
+    • <xs:element name="book"> defines the element called "book" is a root.
+    • <xs:complexType> the "book" element is a complex type i.e. root
+    • <xs:sequence> the complex type is a sequence of elements i.e. childrens
+    • <xs:element name="title" type="xs:string"> the element "title" is of type string (text)
+    • <xs:element name="author" type="xs:string"> the element "author" is of type string
+    • <xs:element name="price" type="xs:integer"> the element "price" is of type integer.
+    • <xs:element name="edition" type="xs:string"> the element "edition" is of type string
+====
+
+
+Q. What is XSLT ? Explain with example ? What is the use
+====
+Ans:
+>>> XSLT is called as extensible stylesheet	
+>>> For styling html components , simliarly to style XML componen we use XSLT
+>>> XSLT is the most important part of XSL
+>>> XSLT transforms an XML document into another XML document
+
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="book.xsl" ?>
+<book-store>
+  <book>
+    <title>JAVA</title>
+    <author>James Gosling</author>
+  </book>
+  <book>
+    <title>C++</title>
+    <author>Dennis Rittchie</author>
+  </book>
+</book-store>
+
+save this code as book.xml
+
+<?xml version="1.0" encoding="UTF-8"?> 
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template-match>
+  <html>
+      <h2>Book Details</h2>
+      <table border="1">
+	<tr>
+	  <th>Title</th>
+	  <th>Author</th>
+	</tr>
+	<xsl:for-each select="book_store/book">
+	<tr>
+	  <td><xsl:value-of select="title"/></td>
+	  <td><xsl:value-of select="author"/></td>
+	</tr>
+        </xsl:for-each>
+  </html>
+</xsl:template-match>
+</xsl:stylesheet>
+
+Save the above file as “book.xsl”
+====

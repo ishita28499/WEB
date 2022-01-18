@@ -1,0 +1,164 @@
+What is XML ?
+-------------
+>>> XML Stands for extensible markup language
+>>> XML is markup language just like HTML 
+>>> XML was designed to store and transport data
+>>> XML was designed to be self-descriptive
+>>> XML is a W3C Recommendation
+
+
+<note>
+    <To>Mangla</To>
+    <from>Shubham</from>
+    <heading>Remainder</heading>
+    <body>Don't forget me this weekend</body>
+</note>
+
+
+
+The XML above is quite self-descriptive:
+----------------------------------------
+>>> It has sender information.
+>>> It has receiver information
+>>> It has a heading
+>>> It has a message body.
+
+The difference b/w XML and HTML
+-------------------------------
+XML and HTML were defined with different goals
+
+>>> XML was designed to carry data - with focus 
+    HTML was designed to display the data
+
+>>> XML doesn't have any predefined tags
+>>> HTML use prefined tags
+
+
+XML Does Not Use Predefined Tags
+--------------------------------
+>>> The XML language has no predefined tags
+>>> The tags in the example above (like <to> and <from>) are not defined in any XML standard. 
+    These tags are "invented" by the author of the XML document.
+>>> HTML works with predefined tags like <p>, <h1>, <table>, etc.
+>>> With XML, the author must define both the tags and the document structure.  
+
+
+XML is Extensible
+-----------------
+>>> Most XML applications will work as expected even if new data is added (or removed).
+>>> Imagine an application designed to display the original version of note.xml (<to> <from> <heading> <body>).
+>>> Then imagine a newer version of note.xml with added <date> and <hour> elements, and a removed <heading>.
+>>> The way XML is constructed, older version of the application can still work
+
+
+
+Why Study XML
+-------------
+>>> XML plays an important role in many different IT systems
+>>> XML is often used for distributing data over the Internet.
+>>> It is important (for all types of software developers!) to have a good understanding of XML.
+
+
+XML Tree Structure
+------------------
+>>> XML documents are formed as element trees.
+>>> An XML tree starts at a root element and branches from the root to child elements.
+>>> All elements can have sub elements (child elements):
+
+<root>
+  <child>
+    <subchild>.....</subchild>
+  </child>
+</root>
+
+
+
+XML Syntax Rules
+----------------
+>>> XML Documents Must Have a Root Element
+
+<root>
+  <child>
+    <subchild>.....</subchild>
+  </child>
+</root>
+
+
+>>> XML Tags are Case Sensitive
+>>> XML Elements Must be Properly Nested
+    <b><i>This text is bold and italic</b></i>
+>>> XML Attribute Values Must Always be Quoted
+
+<note date="12/11/2007">
+  <to>Tove</to
+  <from>Jani</from>
+</note>
+
+What is an XML Element?
+-----------------------
+>>> An XML element is everything from (including) the element's start tag to (including) the element's end tag.
+    <price>29.99</price>
+
+An element can contain:
+--> text
+--> attributes
+--> other elements
+--> or a mix of the above 
+
+<bookstore>
+  <book category="children">
+    <title>Harry Potter</title>
+    <author>J K. Rowling</author>
+    <year>2005</year>
+    <price>29.99</price>
+  </book>
+  <book category="web">
+    <title>Learning XML</title>
+    <author>Erik T. Ray</author>
+    <year>2003</year>
+    <price>39.95</price>
+  </book>
+</bookstore>
+
+<title>, <author>, <year>, and <price> have text content because they contain text (like 29.99).
+<bookstore> and <book> have element contents, because they contain elements.
+<book> has an attribute (category="children").
+
+Empty XML Elements
+------------------
+--> An element with no content is said to be empty.
+--> In XML, you can indicate an empty element like this:
+<element></element>
+
+
+
+XML Naming Rules    
+----------------
+XML elements must follow these naming rules:
+--------------------------------------------
+>>> Element names are case-sensitive
+>>> Element names must start with a letter or underscore
+>>> Element names cannot start with the letters xml (or XML, or Xml, etc)
+>>> Element names can contain letters, digits, hyphens, underscores, and periods
+>>> Element names cannot contain spaces
+>>> Any name can be used, no words are reserved (except xml)
+
+XML Attributes
+--------------
+>>> XML elements can have attributes, just like HTML
+>>> Attributes are designed to contain data related to a specific element.
+
+XML Attributes Must be Quoted
+-----------------------------
+<person gender="female">
+
+
+XML Elements vs. Attributes
+---------------------------
+<person gender="female">
+  <firstname>Anna</firstname>
+  <lastname>Smith</lastname>
+</person>
+
+>> gender is attribute
+>> firstname is element

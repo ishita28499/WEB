@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="app02.css"?>
+<breakfast-menu>
+ <food>
+    <name>Rajma Rice</name>
+    <price>Rs. 100</price>
+    <description>Nice taste contain protein and carbs</description>
+ </food>
+ <food>
+    <name>Cholle Rice</name>
+    <price>Rs. 80</price>
+    <description>Nice taste contain protein and carbs</description>
+ </food>
+ <food>
+    <name>Kadhi Rice</name>
+    <price>Rs. 90</price>
+    <description>Nice taste contain fat</description>
+ </food>
+ <food>
+    <name>Paneer Rice</name>
+    <price>Rs. 150</price>
+    <description>Nice taste contains fats + protein + carbs</description>
+ </food>
+ 
+</breakfast-menu>

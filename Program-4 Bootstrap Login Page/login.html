@@ -1,0 +1,79 @@
+<html>
+
+<head>
+  <title>Login page</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron mt-5 ">
+      <h1 class="text-center">RVCE Admin Login Page</h1>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <div class="container">
+              <form>
+                <div class="form-group">
+                  <label for="Username">Username:</label>
+                  <input class="form-control" type="text" name="userid" id="userid" />
+                </div>
+
+                <div class="form-group">
+                  <label for="Password">Password:</label>
+                  <input class="form-control" type="password" name="pswrd" />
+                </div>
+
+                <div class="form-group">
+                  <button type="button" class="btn btn-primary" onclick="check(this.form)">LOGIN</button>
+                  <button type="reset" class="btn btn-danger">RESET</button>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script language="javascript">
+    var ck_username = /^[A-Za-z0-9]{10,15}$/;
+
+    var ck_pwd = /^[A-Za-z0-9]{10,15}$/;
+
+
+    function check(form) {
+      var userid = form.userid.value;
+      var pwd = form.pswrd.value;
+     
+
+      if (ck_username.test(userid) && ck_pwd.test(pwd)) {
+        alert("Welcome to RVCE");
+        document.write("<h1>" + Date() + "</h1><br><br>" + "<h1>Welcome " + "<b style='color:red;'>" + userid + "</b></h1>");
+        document.body.bgColor = "aqua";
+
+      }
+
+      else {
+        alert("Incorrect User id/ pwd");
+
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

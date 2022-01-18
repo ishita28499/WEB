@@ -1,0 +1,505 @@
+Q.1 What is internet ? History of internet ? How does internet works ?
+-----
+Ans:
+
+Internet
+--------
+>>> The Internet is a vast network that connects computers all over the world. Through the Internet, people can    
+    share information and communicate from anywhere with an Internet connection.
+>>> Internet uses (TCP/IP) Protocol to communicate b/w networks and devices 
+>>> It is a network of network that consist of private , public , goverment , academic , business sector 
+>>> Internet carries vast range of information resources and services such as text, links , documents etc.
+
+History of internet
+-------------------
+>>> In the 1960s, the Advanced Research Projects Agency (ARPA) of the United States funded research into time-   
+    sharing of computers
+>>> Research into packet switching, one of the fundamental Internet technologies, started in the early 1960s 
+>>> In 1969, the University of California at Los Angeles and the University of Utah were connected with the beginning  
+    of the ARPANET (Advanced Research Projects Agency NETwork) using 56 kbit/s circuits, which is sponsored by U.S.   
+    (United States) Department of Defense (DoD). The goal of this project was to connect computers at different 
+    Universities and U.S. (United States) defense.
+>>> The Internet really became popular in 1990’s after the development of World Wide Web (WWW).
+
+WORKING OF INTERNET
+-------------------
+>>> The computers on the Internet are connected to each other through small networks. These networks are connected 
+    through the gateways to the Internet backbone.
+>>> All computers on the Internet, communicate with one another using TCP/IP, which is a basic protocol (i.e. set of  
+    rules) of the Internet
+>>> TCP/IP (Transmission Control Protocol/Internet Protocol) manages the transmission of data/file/document on the     
+    Internet by breaking the data/file/document into small pieces or parts called packets or datagrams.
+
+USES OF INTERNET
+----------------
+E-Commerce (auction, buying, selling products etc.)
+Research (online journals, magazines, information etc.)
+Education (E-learning, distance learning etc.)
+E-Governance (online filling of application, Income Tax, Sales Tax etc.)
+E-Reservation (online reservation, online ticket booking etc.)
+Online Payments (credit and debit card payments etc.)
+Video Conferencing
+Exchange of Views (files, music, folders etc.)
+Social Networking Sites (facebook, twitter etc.)
+Entertainment (play music, videos, games etc.)
+-----
+
+Q.2 What is WWW ? Explain how it works ?
+----
+Ans:-
+>>> World Wide Web, which is also known as a Web, is a collection of websites or web pages stored in web servers and 
+    connected to local computers through the internet
+>>> These websites contain text pages, digital images, audios, videos, etc
+>>> Users can access the content of these sites from any part of the world over the internet using their devices 
+    such as computers, laptops, cell phones, etc.
+>>> The WWW, along with internet, enables the retrieval and display of text and media to your device.
+>>> The building blocks of the Web are web pages which are formatted in HTML and connected by links called "hypertext" 
+    or hyperlinks and accessed by HTTP.
+>>> A web page is given an online address called a Uniform Resource Locator (URL).
+>>> A particular collection of web pages that belong to a specific URL is called a website, e.g., www.facebook.com,   
+    www.google.com, etc. 
+>>> So, the World Wide Web is like a huge electronic book whose pages are stored on multiple servers across the world.
+
+Difference between World Wide Web and Internet:
+---------------------------------------------
+Internets : Connects Computers
+WWW : Connects people
+
+History of the World Wide Web:
+------------------------------
+>>> The World Wide Web was invented by a British scientist, Tim Berners-Lee in 1989.
+>>> Originally, it was developed by him to fulfill the need of automated information sharing between scientists across 
+    the world, so that they could easily share the data and results of their experiments and studies with each other
+>>> Tim focused on three main technologies that could make computers understand each other, HTML, URL, and HTTP. So, the objective behind the invention of WWW was to combine recent computer technologies, data networks, and hypertext into a user-friendly and effective global information system.
+----
+
+
+Q.3 Differentiate b/w web browser and search enginee ? functions of web browser ? 
+----
+Ans:
+>>> Web Browser is a software which is used to browse and display pages available over internet.  
+    Web server is a software which provides these documents when requested by web browsers.
+>>> A web browser sends request to server for web based documents and services.
+    Web server sees and approves those requests made by web browsers and sends the document in response.
+>>> Web browser sends an HTTP Request and gets a HTTP Response.
+    Web server receives HTTP Request and sends a HTTP Response.
+>>> Web browsers stores user data and cookies in local machine.
+    Web server provide an area to store the website.
+>>> Web Browser is installed on user's machine.
+    Web server can be installed any where but it need to be on a network or on local computer.
+---- 
+
+Q.4 What is an URL? Give its format ? 
+----
+Ans:
+>>> URL stands for Uniform Resource Locator
+>>> A URL is the address of a given unique resource on the Web. each valid URL points to a unique resource
+>>> Such resources can be an HTML page, a CSS document, an image, etc.
+
+Example of URL: www.google.com , www.youtube.com , www.rvce.edu.org
+General Form of URL : https://www.google.com:80/login.html?key1=value1&key2=value2
+
+http  --> Protocol
+www   --> Domain Name
+80    --> Port No
+login.html --> resource name
+key1,key2,value1,value2 --> parameters
+----
+
+Q.5 What is MIME ? Explain the architecture of MIME ? List and explain the MIME elements ?
+----
+Ans:
+MIME / Features
+---------------
+>>> MIME stands for Multipurpose Internet Mail Extension is a standard in order to expand limited capabilities of 
+    email.
+>>> It allows the users to exchange different kinds of data files on the Internet: audio, video, images, application   
+    programs as well.
+>>> MIME is a kind of add on or a supplementary protocol which allows non-ASCII data to be sent through SMTP
+>>> MIME transforms non-ASCII data at sender side using 7 bit ASCII data 
+>>> It is able to send multiple attachments with a single message.
+>>> Unlimited message length.
+>>> Binary attachments (executables, images, audio, or video files) which may be divided if needed.
+>>> MIME provided support for varying content types and multi-part messages.
+
+
+Why do we need MIME ? Limitations of Simple Mail Transfer Protocol (SMTP)
+--------------------------------------------------------------------------
+1. SMTP has a very simple architecture
+2. Its simplicity however comes with a price , it only send messages in ASCII format
+3. It can not use for languages that do not support 7 bit ASCII format such as french , german , russian so it can not
+   be transmitted using SMTP , so inorder to make SMTP more broad we use MIME
+4. Using SMTP we can not send binary files or video - audio data
+
+Architecture of MIME
+--------------------
+Suppose a user wants to send an email through user agent and it is in a non-ASCII format so there is a MIME protocol which converts it into 7-bit NVT ASCII format. Message is transferred through e-mail system to the other side in 7-bit format now MIME protocol again converts it back into non-ASCII code and now the user agent of receiver side reads it and then information is finally read by the receiver. 
+----
+
+Q.6 What is HTTP
+----
+Ans:
+>>> HTTP stands for Hyper Text Transfer Protocol
+>>> WWW is about communication between web clients and servers
+>>> Communication between client computers and web servers is done by sending HTTP Requests and receiving HTTP 
+    Responses
+
+HTTP Request / Response
+-----------------------
+A client (a browser) sends an HTTP request to the web
+A web server receives the request
+The server runs an application to process the request
+The server returns an HTTP response (output) to the browser
+The client (the browser) receives the response
+
+----
+
+Q.7 Difference b/w client side and server side scripting ?
+----
+Ans: 
+Client-Side Scripting
+---------------------
+     Client-side scripting (embedded scripts) is code that exists inside the client's HTML page. This code will be    
+     processed on the client machine . Traditionally, client-side scripting is used for page navigation, data 
+     validation and formatting. Client-side scripting, like JavaScript, can be embedded into the page on the client’s  
+     browser. This script will allow the client’s browser to alleviate some of the burden on your web server when 
+     running a web application. Client-side scripting is source code that is executed on the client’s browser instead 
+     of the web-server, and allows for the creation of faster and more responsive web applications.
+
+Server-Side Scripting
+---------------------
+     Web servers are used to execute server side scripting. They are basically used to create dynamic pages. It can 
+     also access the file system residing at web server. Server-side environment that runs on a scripting language is 
+     a web-server. Scripts can be written in any of a number of server-side scripting language available. It is used 
+     to retrieve and generate content for dynamic pages.  
+
+Difference b/w client side and server side scripting
+----------------------------------------------------
+In Client-side source code is visible to user.
+In Server-side source code is not visible to user because it’s output server side is a HTML page.
+
+In Client-side script is usually depends on browser and it’s version.
+In Server-side any server side technology can be use and it does not depend on client. 
+
+Client-side script runs on user’s computer.
+Server-side script runs on web server.
+
+In Client-side it does not provide security for data.
+In Server-side it provides more security for data.
+
+To develop Client-side script HTML, CSS and javascript are used.
+To develop Server-side script PHP, Python, Java, Ruby are used.
+----
+
+
+Q.8 What is HTML5? Explain how XML is better than HTML5 ?
+----
+Ans:
+What is HTML5
+-------------
+HTML stands for Hyper Text Markup Language
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+
+HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last three major HTML version that is a World Wide Web Consortium (W3C) recommendation.
+ 
+Many new semantic features are included. To natively include and handle multimedia and graphical content, the new <video>, <audio> and <canvas> elements were added, and support for scalable vector graphics (SVG) content and MathML for mathematical formulas was also added. To enrich the semantic content of documents, new page structure elements such as <main>, <section>, <article>, <header>, <footer>, <aside>, <nav>, and <figure> are added.
+
+1989	Tim Berners-Lee invented www
+1991	HTML Come
+1993	HTML+ Come
+1995	HTML 2.0 Come
+1997	HTML 3.2 Come
+1999	HTML 4.01 Come
+2000	XHTML 1.0 Come
+2014	HTML5 Come
+
+Why XML is better than HTML
+---------------------------
+>>> XML tags are not predefined. You need to define your customized tags.
+>>> XML was designed to carry data, not to display that data.
+
+<Maruti>
+  <maruti-name>Maruti 800<maruti-name/>
+  <maruti-year>1995<maruti-year/>
+  <maruti-seater>5<maruti-seater/>
+<Maruti/>
+
+>>> Mark-up code of XML is easy to understand for a human.
+>>> Well structured format is easy to read and write from programs.
+>>> XML is an extensible markup language like HTML.	
+
+How is HTML5 different from HTML 
+--------------------------------
+>>> A hypertext markup language (HTML) is the primary language for developing web pages.
+    HTML5 is a new version of HTML with new functionalities with markup language with Internet technologies.
+
+>>> Older version of HTML does not have support for video and audio.
+    HTML5 supports both video and audio. 
+    
+>>> The HTML browser uses cache memory as temporary storage.	
+    HTML5 has the storage options like : application cache, SQL database, and web storage.
+
+>>> HTML is compatible with almost all browsers because it has been present for a long time, and the browser made      
+    modifications to support all the features.
+    In HTML5, we have many new tags, elements, and some tags that have been removed/modified, so only some browsers    
+    are fully compatible with HTML5.
+    
+>>> In HTML, vector graphics are possible with tools like Silver light, Adobe Flash, VML, etc.
+    In HTML5, vector graphics are supported by default.
+    
+>>> In HTML, the browser interface and JavaScript running in the same thread.
+    The HTML5 has the JavaScript Web Worker API, which allows the browser interface to run in multiple threads.
+    
+>>> Uses cookies to store data.
+    Uses local storage instead of cookies
+    
+>>> It is not possible to draw shapes like circles, rectangles, triangles
+    Using html5, you can draw shapes like circles, rectangles, triangles.
+    
+---- 
+
+Q. 9 With an example. Describe the basic structure of an HTML5 document ?
+----
+Ans:
+<!DOCtype html>
+<html>
+  <head>
+    <title>RV College of Engineering</title>
+  </head>
+  <body>
+      <h1>This is basic HTML Page</h1>
+      <p>
+      	HTML Stands for hyper text markup language , HTML was created by Timberner's Lee
+      </p>
+  </body>
+</html>
+---- 
+
+
+Q.10  Which tags and sections must be present in an HTML5 document? 
+----
+Ans:
+<head> tag , <body> tag <!DOCtype html> tag 
+----
+
+Q.11 What are HTML5 tags explain by giving some example ?
+----
+Following are some HTML 5 Tags:
+------------------------------
+1. <a>	Defines a hyperlink.
+2. <abbr> Specifies an abbreviation
+3. <area> Specifies an area inside an image map
+4. <article>	New Tag: Specifies an independent piece of content of a document, such as a blog entry or 
+   newspaper article
+   
+5. <aside> New Tag : Specifies a piece of content that is only slightly related to the rest of the page.
+6. <audio> New Tag : Specifies an audio file.
+7. <video> New Tag : Specifies a video file.
+8. <bgsound> Specifies the background music
+9. <canvas> New Tag : This is used for rendering dynamic bitmap graphics on the fly, such as graphs or games.
+10. <center> Deprecated : Specifies centered text
+11. <b>	Specifies bold text
+12. <big> Deprecated : Specifies big text
+13. <i>	Specifies italic text
+14. <font> Deprecated : Specifies text font, size, and color
+15. <footer> New Tag : Specifies a footer for a section and can contain information about the author, copyright 
+                       information, et cetera
+                     
+16. <form>	Specifies a form 
+17. <img>	Specifies an image
+18. <input>	Specifies an input field
+----
+
+Q.12 What is a table in HTML5? How it is constructed. Also create a simple form which accepts Name. Address, location 
+     and comments. Use HTML5.
+-----
+Ans:
+-----
+
+>>> HTML tables allow web developers to arrange data into rows and columns.
+
+>>> The <table> tag defines an HTML table.
+
+>>> Each table row is defined with a <tr> tag. Each table header is defined with a <th> tag. Each table data/cell is  
+    defined with a <td> tag.
+
+>>> By default, the text in <th> elements are bold and centered.
+
+>>> By default, the text in <td> elements are regular and left-aligned.
+
+>>> To add a border to a table, use the CSS border property:
+
+>>> To let the borders collapse into one border , add the CSS border-collapse property:
+
+-----
+
+
+Q.13 What are the benefits of using styles compared with placing formatting directly into the text of a webpage? How 
+     id's and classes are defined in styles?
+----
+Ans:
+1. CSS helps to keep it neat . If you are building a big site , this counts for a lot
+2. CSS style sheet has a easy maintainence i.e easy to maintain and update
+3. It saves time , you can format one word or paragraph and then copy that formatting to other words or paragraphs
+4. CSS saves effort , when you change a style , you can change all text or words and paragraphs associated with type
+   or style
+5. CSS enables multiple pages to share the formatting information , which reduce complexity and repetition in the 
+   structural contents of the docuement
+6. It has much wider presentation capabilities than HTML moreover , it provide much better control over the layout 
+   of your web pages
+   
+ How id's and classes are defined in styles
+ -------------------------------------------
+ we can use Id by using Id selector which is #
+ 
+ <style>
+   #maindiv{
+     font-weight:bold;
+     font-size:1em;
+     text-center:center;
+     color:red;
+   }
+ </style>
+ 
+ <div>.0
+ 
+ 
+ ......................................................................................................................................
+   <h1 id="main">Hello</h1>
+ </div>
+ 
+ we can use Class using Class selector which is .
+ <style>
+   .maindiv{
+     width:100px;
+     height:100px;
+     background-color:aqua;
+   }
+ </style>
+ <div class="main">
+   <h1>Hello</h1>
+ </div>
+ 
+---- 
+
+Q.14 What is id and class in CSS ?
+----
+Ans:
+HTML id Attribute: The id attribute is a unique identifier which is used to specify the document. It is used by CSS and JavaScript to perform a certain task for a unique element. In CSS, the id attribute is written using # symbol followed by id.	
+
+<p id="geeks">Welcome to Geeks for Geeks</p> 
+
+
+HTML class Attribute: The class attribute is used to specify one or more class names for an HTML element. The class attribute can be used on any HTML element. The class name can be used by CSS and JavaScript to perform certain tasks for elements with the specified class name. The class name in CSS stylesheet using “.” symbol.
+
+<p class="geeks"> 
+    A Computer Science portal for geeks 
+</p> 
+----
+
+Q.15 What is web server and application server ?
+----
+Web Server:
+-----------
+A web server accepts and fulfills requests from clients for static content (i.e., HTML pages, files, images, and videos) from a website. Web servers handle HTTP requests and responses only. web server don't provide support for 
+multithreading 
+
+ex. apache tomcat
+
+client <===> webserver <===> database
+
+Application Server:
+------------------
+An application server exposes business logic to the clients, which generates dynamic content. It is a software framework that transforms data to provide the specialized functionality offered by a business, service, or application. Application servers enhance the interactive parts of a website that can appear differently depending on the context of the request. application server provides support for multithreading
+
+ex.  weblogic , jboss
+client <===> webserver <===> <====applicaiton server> database
+
+----
+
+Q. 16 Identify the protocol used in client-server architecture
+----
+Ans:-
+TCP/IP Protocol
+----
+
+Q. 17 Explain CSS Boxmodel with diagram
+----
+Ans:-
+
+
+-------------------------|
+	 Margin          |
+|  ----------------------|           
+|  |     Border          |
+|  |  |------------------|
+|  |  |   Padding        |
+|  |  |  |---------------|
+|  |  |  | Content       |
+|  |  |  |               |
+|  |  |  |---------------|
+|  |  |                  |
+|  |  |------------------|
+|  |---------------------|
+|------------------------|
+-------------------------|
+
+
+Explanation of the different parts:
+-----------------------------------
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+
+Q. 18 Explain three level of CSS with their scope
+----
+Ans:-
+
+Cascading Style Sheet(CSS) is used to set the style in web pages that contain HTML elements. It sets the background color, font-size, font-family, color, … etc property of elements on a web page.
+There are three types of CSS which are given below:
+
+1. Inline CSS
+----------
+Inline CSS: Inline CSS contains the CSS property in the body section attached with element is known as inline CSS. This kind of style is specified within an HTML tag using the style attribute.
+
+<p style="-----"></p>
+
+2. Document Level CSS
+------------------
+This can be used when a single HTML document must be styled uniquely. The CSS rule set should be within the HTML file in the head section i.e the CSS is embedded within the HTML file.
+
+<style>
+---
+---
+---
+</style>
+
+3. External CSS
+---------------
+External CSS contains separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, … etc). CSS property written in a separate file with .css extension and should be linked to the HTML document using link tag. This means that for each element, style can be set only once and that will be applied across web pages.
+
+body {
+    background-color:powderblue;
+}
+.main {
+    text-align:center;   
+}
+.GFG {
+    color:#009900;
+    font-size:50px;
+    font-weight:bold;
+}
+#geeks {
+    font-style:bold;
+    font-size:20px;
+}
+
+<head> 
+        <link rel="stylesheet" href="style.css"/> 
+</head> 
+----

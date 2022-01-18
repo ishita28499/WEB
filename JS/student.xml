@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<student-info>
+    <student>
+     <usn>RVCE20MCA086</usn>
+     <name>Shubham</name>
+     <college>RVCE</college>
+     <city>Bengaluru</city>
+     <year>2021</year>
+    </student>
+    <student>
+     <usn>RVCE20MCA074</usn>
+     <name>Anshu</name>
+     <college>RVCE</college>
+     <city>Bengaluru</city>
+     <year>2021</year>
+    </student>
+</student-info>

@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Using the XMLHttpRequest Object</h2>
+
+    <div id="demo">
+      <button type="button" onclick="load()">Change Content</button>
+    </div>
+
+    <script>
+      function load() {
+        var pro = new XMLHttpRequest();
+        pro.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            myFunction(this);
+          }
+        };
+        pro.open("GET", "student.txt", true);
+        pro.send();
+      }
+      function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table = "<tr><th>USN</th><th>NAME</th></tr>";
+        var x = xmlDoc.getElementsByTagName("student");
+        for (i = 0; i < x.length; i++){
+            
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+0 : request not initialized
+1 : server connection established
+2 : request recieved   [200 OK]
+3 : processing request 
+4 : request finished and response is ready
+ -->
